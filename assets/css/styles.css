@@ -1,0 +1,59 @@
+.col-md-3 img {
+  max-width:125px;
+}
+
+.col-md-4 img {
+  max-width:300px;
+}
+
+.col-md-3 img {
+  margin:0 auto;
+}
+
+.col-md-4 img {
+  margin:0 auto;
+}
+
+.col-md-3 {
+  margin-top:10px;
+}
+
+.col-md-4 {
+  margin-bottom:20px;
+}
+
+#centerText {
+  margin-top:60px;
+}
+
+#topMargin {
+  margin-top:75px;
+  margin-bottom:50px;
+  color:#ffffff;
+}
+
+#microphone {
+  max-width:50px;
+}
+
+#restart {
+  max-width:50px;
+}
+
+#attackRestart {
+  margin-top:30px;
+}
+
+.btn-circle {
+  border-radius:50px;
+}
+
+#centerButton {
+  width:100%;
+}
+
+.deadRapper {
+  filter:grayscale(100%);
+  text-decoration:line-through;
+}
+

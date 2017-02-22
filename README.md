@@ -20,8 +20,10 @@ In this assignment, I created a fighting style game with a Rap Legends theme tha
 
 ## Concepts Implemented
 
-- Dynamically updated HTML powered by JavaScript code
+- Dynamically updated HTML powered by jQuery code
 - Manipulated HTML elements based on user input
+- Object Oriented Programming
+- Interaction between multiple objects
 
 ## Code Explanation
 - User selects a player to use throughout the game and is prompted to compete against all remaining players
