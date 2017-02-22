@@ -50,10 +50,10 @@
 
 #centerButton {
   width:100%;
+  margin-bottom: 60px;
 }
 
 .deadRapper {
   filter:grayscale(100%);
   text-decoration:line-through;
 }
-
