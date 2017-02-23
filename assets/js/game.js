@@ -74,6 +74,7 @@ $(document).ready(function() {
                 if (rapperOneName == rapperTwoName || power == "0") {
                     // button is set not available when selecting a defeated character
                     $("#mainHeader").html("Not Available");
+                    $(".centerParagraph").html("");
                     $("#centerButton").html("");
                     // button is disabled
                     document.getElementById("centerButton").disabled = true;
