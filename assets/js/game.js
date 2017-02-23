@@ -7,6 +7,8 @@ $(document).ready(function() {
     //   // on mouseout, reset the background colour
     //   $('#topMargin').css("margin-top", "75px");
     // });
+    // disable button on load
+    $("#centerButton").prop("disabled", true);
     // rapper locks allow you to select the next rapper
     var rapperOneLocked = false;
     var rapperTwoLocked = false;
@@ -60,8 +62,10 @@ $(document).ready(function() {
                 $(".rapperOneProgress").html(power + "%");
                 // rapper one progressbar is set to the value given to selected character
                 rapperOneProgress = power;
-                // centerParagraph is changed to the following text when selecting your first rapper
-                $(".centerParagraph").html("Select your MC and press 'Select'");
+                // centerParagraph is changed to the following text when selecting player 1
+                $(".centerParagraph").html("");
+                $("#centerButton").html("Select Player 1");
+                $("#centerButton").prop("disabled", false);
                 // if rapperTwoLocked is not locked then the rapper you click on goes to rapperTwoLocation
             } else if (!rapperTwoLocked) {
                 // holds the alt value that holds character name of the image clicked to be used in the object
@@ -70,6 +74,7 @@ $(document).ready(function() {
                 if (rapperOneName == rapperTwoName || power == "0") {
                     // button is set not available when selecting a defeated character
                     $("#mainHeader").html("Not Available");
+                    $(".centerParagraph").html("");
                     $("#centerButton").html("");
                     // button is disabled
                     document.getElementById("centerButton").disabled = true;
@@ -77,8 +82,8 @@ $(document).ready(function() {
                 } else if (rapperOneName != rapperTwoName) {
                     // button is set back to default when selecting an available character
                     $("#mainHeader").html("The Rappers Delight");
-                    $(".centerParagraph").html("Select your opponent and press 'Select'");
-                    $("#centerButton").html("Select");
+                    $(".centerParagraph").html("");
+                    $("#centerButton").html("Select Player 2");
                     // button is not disabled
                     document.getElementById("centerButton").disabled = false;
                     // rapperTwoImage class src and alt(name in div) is changed to the src of the image clicked
@@ -113,8 +118,9 @@ $(document).ready(function() {
             if (!rapperOneLocked) {
                 // lock rapperOne by making it true
                 rapperOneLocked = true;
-                // set the center paragraph text to notify you that your opponent needs to be seleted
-                $(".centerParagraph").html("Select your opponent and press 'Select'");
+                // centerParagraph is changed to the following text when selecting player 2
+                $(".centerParagraph").html("");
+                $("#centerButton").html("Select Player 2");
                 // if rapperTwoLocked is not locked then lock the selection when button is pressed
             } else if (!rapperTwoLocked) {
                 if (rapperOneName != rapperTwoName) {
