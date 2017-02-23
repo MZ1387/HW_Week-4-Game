@@ -61,7 +61,7 @@ $(document).ready(function() {
                 // rapper one progressbar is set to the value given to selected character
                 rapperOneProgress = power;
                 // centerParagraph is changed to the following text when selecting your first rapper
-                $(".centerParagraph").html("Select your opponent and press 'Select'");
+                $(".centerParagraph").html("Select your MC and press 'Select'");
                 // if rapperTwoLocked is not locked then the rapper you click on goes to rapperTwoLocation
             } else if (!rapperTwoLocked) {
                 // holds the alt value that holds character name of the image clicked to be used in the object
